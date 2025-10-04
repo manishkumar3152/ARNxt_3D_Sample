@@ -9,10 +9,7 @@ export default function ARViewer() {
     "https://modelviewer.dev/shared-assets/models/Astronaut.usdz";
 
   return (
-    <div
-      className="w-full h-screen flex items-center justify-center bg-blue-100 relative"
-      style={{ overflow: "hidden" }}
-    >
+    <div className="w-full h-screen flex items-center justify-center bg-blue-100 relative overflow-hidden">
       <model-viewer
         src={modelUrl}
         ios-src={iosModelUrl}
@@ -23,31 +20,18 @@ export default function ARViewer() {
         autoplay
         shadow-intensity="1"
         exposure="1"
-        style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "#e0f2ff",
-        }}
+        style={{ width: "100%", height: "100%" }}
       >
-        {/* Custom AR Button */}
+        {/* ✅ Tailwind Custom AR Button — Fixed at Top */}
         <button
           slot="ar-button"
-          style={{
-            position: "absolute",
-            bottom: "24px",
-            left: "50%",
-            transform: "translateX(-50%)",
-            background: "#fff",
-            border: "none",
-            color: "#000",
-            fontSize: "16px",
-            fontWeight: "600",
-            padding: "12px 24px",
-            borderRadius: "10px",
-            boxShadow: "0px 4px 8px rgba(0,0,0,0.25)",
-            cursor: "pointer",
-            zIndex: "999",
-          }}
+          className="
+            fixed top-5 left-1/2 -translate-x-1/2
+            bg-white text-black font-semibold
+            px-6 py-3 rounded-xl shadow-md
+            hover:bg-gray-100 active:scale-95
+            transition-all duration-200 z-[999]
+          "
         >
           📱 View in your space
         </button>
