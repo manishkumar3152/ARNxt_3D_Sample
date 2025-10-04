@@ -2,11 +2,8 @@ import React from "react";
 import "@google/model-viewer";
 
 export default function ARViewer() {
-  const modelUrl =
-    "https://arnxtmodelstest.s3.ap-south-1.amazonaws.com/1720504495942_Royaloak%20Venice%20Italian%20Fabric%20Sofa%201S.glb";
-
-  const iosModelUrl =
-    "https://modelviewer.dev/shared-assets/models/Astronaut.usdz";
+  const modelUrl = "/model.glb";     
+  const iosModelUrl = "/iosmodel.usdz"; 
 
   return (
     <div className="w-full h-screen flex items-center justify-center bg-blue-100 relative overflow-hidden">
@@ -22,7 +19,6 @@ export default function ARViewer() {
         exposure="1"
         style={{ width: "100%", height: "100%" }}
       >
-        {/* ✅ Tailwind Custom AR Button — Fixed at Top */}
         <button
           slot="ar-button"
           className="
