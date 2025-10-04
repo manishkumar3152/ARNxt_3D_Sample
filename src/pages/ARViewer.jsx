@@ -1,11 +1,12 @@
 import "@google/model-viewer";
 
 export default function ARViewer() {
-  const query = new URLSearchParams(window.location.search);
-  const modelUrl = query.get("modelUrl");
+  // const query = new URLSearchParams(window.location.search);
+  const modelUrl = "https://arnxtmodelstest.s3.ap-south-1.amazonaws.com/1720504495942_Royaloak%20Venice%20Italian%20Fabric%20Sofa%201S.glb";
+  
 
   return (
-    <div className="w-full h-screen flex items-center justify-center bg-black">
+    <div className="w-full h-screen flex items-center justify-center ">
       <model-viewer
         src={modelUrl}
         ar
@@ -15,12 +16,7 @@ export default function ARViewer() {
         shadow-intensity="1"
         style={{ width: "100%", height: "100%" }}
       >
-        <button
-          slot="ar-button"
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-lg shadow-lg text-black font-semibold"
-        >
-          📱 View in your space
-        </button>
+       
       </model-viewer>
     </div>
   );
