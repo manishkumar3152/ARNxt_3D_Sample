@@ -1,4 +1,3 @@
-
 import "@google/model-viewer";
 
 export default function ARViewer() {

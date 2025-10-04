@@ -1,6 +1,6 @@
 
 import QRCode from "qrcode.react";
-export default function QRCodeGenerator({ modelUrl }) {
+export default function QRCodeGenerator() {
   const viewerUrl = `https://ar-assignment-eta.vercel.app/ar-viewer}`;
 
   return (

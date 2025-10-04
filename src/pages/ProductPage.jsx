@@ -53,7 +53,7 @@ export default function ProductPage() {
             <h3 className="mb-4 text-lg font-semibold">Scan to View in Your Room</h3>
 
             {/* QR Code → links to AR viewer page */}
-            <QRCodeGenerator url={`${window.location.origin}/ar-viewer?modelUrl=${encodeURIComponent(product.modelUrl)}`} />
+            <QRCodeGenerator />
           </div>
         </div>
       )}
