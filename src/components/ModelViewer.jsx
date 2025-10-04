@@ -1,11 +1,6 @@
-import React, { useEffect } from "react";
 import "@google/model-viewer";
 
 export default function ModelViewer({ modelUrl }) {
-  useEffect(() => {
-    // Ensure web component is registered
-    import("@google/model-viewer");
-  }, []);
 
   return (
     <model-viewer

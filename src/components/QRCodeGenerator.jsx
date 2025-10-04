@@ -1,9 +1,7 @@
 
 import QRCode from "qrcode.react";
-
 export default function QRCodeGenerator({ modelUrl }) {
-  // ✅ QR points to ARViewer page with modelUrl in query param
-  const viewerUrl = `https://ar-assignment-eta.vercel.app/ar-viewer?modelUrl=${encodeURIComponent(modelUrl)}`;
+  const viewerUrl = `https://ar-assignment-eta.vercel.app/ar-viewer}`;
 
   return (
     <div className="flex flex-col items-center space-y-4">
