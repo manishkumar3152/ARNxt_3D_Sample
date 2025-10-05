@@ -1,7 +1,7 @@
 
 import {QRCodeSVG} from "qrcode.react";
 export default function QRCodeGenerator() {
-  const viewerUrl = `https://ar-assignment-eta.vercel.app/ar-viewer`;
+  const viewerUrl = `https://ar-nxt-3-d-sample.vercel.app/ar-viewer`;
 
   return (
     <div className="flex flex-col items-center space-y-4">
