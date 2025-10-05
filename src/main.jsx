@@ -12,8 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/product" element={<ProductPage />} />
-       <Route path="/ar-viewer" element={<ARViewer />} />
-
+        <Route path="/ar-viewer" element={<ARViewer />} />
       </Routes>
     </Router>
   </React.StrictMode>

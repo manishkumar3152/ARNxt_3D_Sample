@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import ModelViewer from "../components/ModelViewer";
 import QRCodeGenerator from "../components/QRCodeGenerator";
 
@@ -7,8 +7,7 @@ const product = {
   price: 500,
   brand: "VIMANI",
   dimensions: "24in x 22in x 30in",
-  modelUrl:
-    "https://arnxtmodelstest.s3.ap-south-1.amazonaws.com/1720504495942_Royaloak%20Venice%20Italian%20Fabric%20Sofa%201S.glb",
+  modelUrl:"/model.glb"
 };
 
 export default function ProductPage() {
@@ -46,7 +45,7 @@ export default function ProductPage() {
             {/* Close Button */}
             <button
               onClick={() => setShowQR(false)}
-              className="absolute top-2 right-2 text-gray-600 hover:text-black text-lg"
+              className="absolute top-2 right-2 text-gray-600 hover:text-white hover:bg-red-600 text-lg px-2 "
             >
               ✕
             </button>
