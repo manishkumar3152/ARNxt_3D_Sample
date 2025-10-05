@@ -7,7 +7,7 @@ import { XR, ARButton } from "@react-three/xr"; // 👈 removed Controllers
 function Model({ url }) {
   const { scene } = useGLTF(url);
   return <primitive object={scene} scale={0.5} />;
-
+}
 
 export default function FloorARScene() {
   return (
